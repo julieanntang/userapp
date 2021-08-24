@@ -3,4 +3,8 @@ class UsersController < ApplicationController
     users = User.all
     render component: "Users", props: { users: users }
   end
+
+  def new
+    render component: "NewUser"
+  end
 end
