@@ -4,11 +4,11 @@ const NewUser = () => {
   return (
     <div>
       <h1>Form</h1>
-      <form>
+      <form action="/users" method="post">
         <p>Name</p>
-        <input />
+        <input name="user[name]" />
         <p>Age</p>
-        <input />
+        <input name="user[age]" />
         <button type="submit">add</button>
       </form>
     </div>
