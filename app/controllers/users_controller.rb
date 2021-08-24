@@ -5,6 +5,11 @@ class UsersController < ApplicationController
     render component: "Users", props: { users: users }
   end
 
+  def show
+    user = User.find(params[:id])
+    render component: "User", props: { user: user }
+  end
+
   def new
     render component: "NewUser"
   end
