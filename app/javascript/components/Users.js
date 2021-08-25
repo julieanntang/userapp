@@ -8,6 +8,7 @@ const Users = (props) => {
       {props.users.map((user) => {
         return (
         <div key={user.id}>
+          <p>ID: {user.id}</p>
           <p>{user.name}</p>
           <p>{user.age}</p>
         </div>
